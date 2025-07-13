@@ -1,0 +1,34 @@
+import { type ReactNode, useState } from "react";
+
+export type TooltipProps = {
+  content: string;
+  shortcut?: string;
+  children: ReactNode;
+};
+
+export function Tooltip({ content, shortcut, children }: TooltipProps) {
+  const [visible, setVisible] = useState(false);
+
+  return (
+    <div
+      className="relative inline-flex"
+      onMouseEnter={() => setVisible(true)}
+      onMouseLeave={() => setVisible(false)}
+      onFocus={() => setVisible(true)}
+      onBlur={() => setVisible(false)}
+    >
+      {children}
+      {visible && (
+        <div className="absolute bottom-full left-1/2 -translate-x-1/2 mb-2 px-2.5 py-1.5 rounded-md bg-primary text-surface text-xs font-medium whitespace-nowrap pointer-events-none z-50">
+          <span>{content}</span>
+          {shortcut && (
+            <kbd className="ml-1.5 px-1 py-0.5 rounded bg-surface/20 text-[10px] font-mono">
+              {shortcut}
+            </kbd>
+          )}
+          <div className="absolute top-full left-1/2 -translate-x-1/2 -mt-px border-4 border-transparent border-t-primary" />
+        </div>
+      )}
+    </div>
+  );
+}
