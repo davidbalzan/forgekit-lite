@@ -134,6 +134,10 @@ ForgeKit Lite includes the 5 essential commands. The full [ForgeKit](https://git
 
 ---
 
+## Author
+
+Built by [David Balzan](https://davidbalzan.com).
+
 ## License
 
 [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/) — Free to use and adapt with attribution. No commercial redistribution.
