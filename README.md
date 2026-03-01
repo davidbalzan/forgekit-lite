@@ -1,16 +1,27 @@
 # ForgeKit Lite
 
-A production-ready monorepo starter with an AI workflow layer. Clone it, run 5 slash commands, and build with an AI assistant that never loses context between sessions.
+A clean production monorepo starter with a simple AI workflow layer.
+Clone it, run five slash commands, and suddenly your AI assistant actually remembers what you're building.
 
-**Works with Claude Code, Cursor, and VS Code Copilot.**
+[![TypeScript](https://img.shields.io/badge/TypeScript-5-blue)](https://www.typescriptlang.org/)
+[![React](https://img.shields.io/badge/React-19-blue)](https://react.dev/)
+[![Hono](https://img.shields.io/badge/Hono-4-orange)](https://hono.dev/)
+[![Turborepo](https://img.shields.io/badge/Turborepo-2-blueviolet)](https://turbo.build/)
+[![License](https://img.shields.io/badge/License-MIT-green)](./LICENSE)
+
+**Works with Claude Code · Cursor · VS Code Copilot**
 
 ---
 
 ## Why ForgeKit Lite?
 
-AI coding assistants forget everything between sessions. You end up re-explaining your project, your progress, and your next steps every time.
+AI coding assistants are powerful... until they forget everything between sessions.
 
-ForgeKit Lite solves this with 5 slash commands that read and write structured markdown files. Your AI assistant always knows where you left off, what's done, and what's next — without you repeating yourself.
+You end up repeating the same context over and over: what the project is about, where you left off, what the next steps are.
+
+ForgeKit Lite fixes that with five simple slash commands that read and write plain Markdown files. Your assistant always knows the current phase, what's done, what's next, and why — without you having to re-explain.
+
+It's lightweight, practical, and designed to stay out of your way.
 
 ---
 
@@ -24,44 +35,30 @@ cp .env.example .env
 pnpm dev
 ```
 
-- **Frontend** → http://localhost:5173
-- **API** → http://localhost:3000/api/health
+- Frontend → http://localhost:5173
+- API → http://localhost:3000/api/health
 
-### Prerequisites
-
-- [Node.js](https://nodejs.org/) 22+
-- [pnpm](https://pnpm.io/) 10+
+**Prerequisites**: [Node.js](https://nodejs.org/) 22+ and [pnpm](https://pnpm.io/) 10+.
 
 ---
 
 ## The 5 Commands
 
-| Command | What It Does | When to Use |
+| Command | What it does | When to use |
 | --- | --- | --- |
-| `/kickstart` | Walks you through project setup. Generates roadmap, phase structure, and focus doc. | Once, at the start |
-| `/plan-phase` | Analyzes your codebase and creates a detailed task breakdown for a phase. | When starting each phase |
-| `/start-session` | Reads your docs and tells you where you left off and what to do next. | Every coding session |
-| `/check-task` | Marks tasks complete in your phase doc and updates progress. | After completing work |
-| `/update-focus` | Records what you did, what's next, and any blockers. | End of each session |
+| `/kickstart` | Sets up your project docs and roadmap | Once, when starting |
+| `/plan-phase` | Creates a clear task list for the current phase | At the beginning of each phase |
+| `/start-session` | Loads everything you need to know right now | Start of every coding session |
+| `/check-task` | Marks tasks as done and updates progress | After finishing work |
+| `/update-focus` | Saves what you accomplished and what's next | End of each session |
 
-### The Workflow
+### Simple workflow
 
 ```
-/kickstart          Set up project docs (once)
-     ↓
-/plan-phase         Create tasks for Phase 1
-     ↓
-/start-session  →  Code  →  /check-task  →  /update-focus
-     ↑                                            ↓
-     └────────────── next session ────────────────┘
+/kickstart → /plan-phase → /start-session → Code → /check-task → /update-focus
+                                   ↑                                    ↓
+                            (next session starts here)
 ```
-
-1. **`/kickstart "My Project"`** — Answer a few questions, get a roadmap and phase structure
-2. **`/plan-phase 1 "Foundation"`** — Get tasks with checkboxes and priorities
-3. **`/start-session`** — AI loads context: current phase, progress, blockers, next steps
-4. **Code** — Build features, fix bugs, ship
-5. **`/check-task 1.3`** — Mark task 1.3 as done
-6. **`/update-focus "Finished auth, starting dashboard"`** — Save session progress
 
 ---
 
@@ -70,74 +67,64 @@ pnpm dev
 ```
 forgekit-lite/
 ├── apps/
-│   ├── web/                # React 19 + Vite 6 + Tailwind CSS 4
-│   └── api/                # Hono 4 API server
-├── packages/
-│   ├── shared/             # Types, constants, utilities
-│   └── ui/                 # React component library
+│   ├── web/          # React 19 + Vite + Tailwind
+│   └── api/          # Hono API server
+├── packages/         # Shared types & UI components
 ├── docs/
-│   ├── COMMANDS.md         # Command reference
-│   ├── templates/          # Doc templates for /kickstart
-│   └── phases/             # Phase-based task tracking
-├── .claude/skills/         # Claude Code commands
-├── .cursor/commands/       # Cursor commands
-├── .vscode/prompts/        # VS Code Copilot prompts
-└── CURRENT_FOCUS.md        # Active work context
+│   ├── phases/       # Your phase-based task tracking
+│   └── templates/    # Ready-to-use doc templates
+├── .claude/          # Claude Code commands
+├── .cursor/          # Cursor commands
+├── .vscode/          # VS Code Copilot prompts
+└── CURRENT_FOCUS.md  # Keeps your AI in sync
 ```
+
+---
 
 ## Tech Stack
 
-| Layer | Technology | Version |
-| --- | --- | --- |
-| Frontend | React | 19 |
-| Build | Vite | 6 |
-| Styling | Tailwind CSS | 4 |
-| Backend | Hono | 4 |
-| Runtime | Node.js | 22+ |
-| Language | TypeScript | 5 |
-| Package Manager | pnpm | 10 |
-| Monorepo | Turborepo | 2 |
+- **Frontend**: React 19 + Vite 6 + Tailwind CSS 4
+- **Backend**: Hono 4
+- **Monorepo**: Turborepo 2
+- **Language**: TypeScript 5
+- **Package manager**: pnpm 10
+
+---
 
 ## Scripts
 
 ```bash
-pnpm dev          # Start all apps (web + api)
-pnpm build        # Build for production
-pnpm lint         # ESLint across all workspaces
-pnpm typecheck    # TypeScript type checking
-pnpm test         # Run tests via Vitest
-pnpm format       # Format with Prettier
-pnpm clean        # Clean build artifacts
+pnpm dev      # Start everything
+pnpm build    # Production build
+pnpm lint     # Check code style
+pnpm test     # Run tests
+pnpm format   # Prettier
 ```
 
 ---
 
 ## Multi-IDE Support
 
-The same 5 commands work across three IDEs:
+The same five commands work everywhere:
 
-| IDE | Location | How to Invoke |
-| --- | --- | --- |
-| **Claude Code** | `.claude/skills/` | Type `/commandname` in terminal |
-| **Cursor** | `.cursor/commands/` | Type `/` in Agent chat |
-| **VS Code Copilot** | `.vscode/prompts/` | Copilot Chat → paperclip → Prompt |
+- **Claude Code** — type `/command` in the terminal
+- **Cursor** — type `/` in the agent chat
+- **VS Code Copilot** — use the prompt library
 
 ---
 
 ## Full Version
 
-ForgeKit Lite includes the 5 essential commands. The full [ForgeKit](https://github.com/davidbalzan/forgeKit) adds:
+This is the **Lite** edition (the essential five commands).
 
-- 6 additional commands (`/create-prd`, `/log-decision`, `/phase-status`, `/remember`, `/distill`, `/cleanup`)
-- Knowledge base for persistent learnings across sessions
-- Extended templates (PRD, architecture guide, design system, tech stack)
+The full [ForgeKit](https://github.com/davidbalzan/forgeKit) adds extra commands, a persistent knowledge base, and more advanced templates.
 
 ---
 
-## Author
-
-Built by [David Balzan](https://davidbalzan.com).
-
 ## License
 
-[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/) — Free to use and adapt with attribution. No commercial redistribution.
+[MIT](./LICENSE)
+
+---
+
+Built by [David Balzan](https://davidbalzan.com) — a coder who's been building things for over 25 years and still loves the craft.
