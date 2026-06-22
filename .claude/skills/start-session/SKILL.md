@@ -1,6 +1,6 @@
 ---
 name: start-session
-description: Load project context from ForgeKit docs at the start of a session
+description: Load project context from Groundwork docs at the start of a session
 disable-model-invocation: true
 argument-hint: "[optional: specific area to focus on]"
 allowed-tools: Read, Glob, Grep

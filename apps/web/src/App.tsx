@@ -1,5 +1,5 @@
 import { Hammer } from "lucide-react";
-import { APP_NAME } from "@forgekit/shared";
+import { APP_NAME } from "@groundwork/shared";
 
 export function App() {
   return (
@@ -16,7 +16,7 @@ export function App() {
           </div>
           <h2 className="text-2xl font-bold">Ready to build</h2>
           <p className="text-secondary">
-            Your ForgeKit project is running. Edit{" "}
+            Your Groundwork project is running. Edit{" "}
             <code className="text-sm font-mono bg-muted px-1.5 py-0.5 rounded">
               apps/web/src/App.tsx
             </code>{" "}
@@ -36,7 +36,7 @@ export function App() {
       </main>
 
       <footer className="border-t border-border px-6 py-3 text-center text-xs text-tertiary">
-        Built with ForgeKit
+        Built with Groundwork
       </footer>
     </div>
   );

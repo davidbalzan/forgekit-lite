@@ -1,6 +1,6 @@
 ---
 mode: ask
-description: Load project context from ForgeKit docs at the start of a session
+description: Load project context from Groundwork docs at the start of a session
 ---
 
 # Start Session - Context Loader

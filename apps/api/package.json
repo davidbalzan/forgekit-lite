@@ -1,5 +1,5 @@
 {
-  "name": "@forgekit/api",
+  "name": "@groundwork/api",
   "private": true,
   "type": "module",
   "scripts": {
@@ -11,7 +11,7 @@
     "clean": "rm -rf dist"
   },
   "dependencies": {
-    "@forgekit/shared": "workspace:*",
+    "@groundwork/shared": "workspace:*",
     "@hono/node-server": "^1.14.1",
     "@hono/zod-validator": "^0.4.3",
     "dotenv": "^16.4.7",

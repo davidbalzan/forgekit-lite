@@ -1,4 +1,4 @@
-export const APP_NAME = "ForgeKit";
+export const APP_NAME = "Groundwork";
 export const APP_VERSION = "0.1.0";
 
 export const STATUS = {

@@ -1,6 +1,6 @@
 # Kickstart - Project Initialization
 
-Initialize a new project with ForgeKit Lite documentation structure through a guided flow.
+Initialize a new project with Groundwork Lite documentation structure through a guided flow.
 
 ## Instructions
 

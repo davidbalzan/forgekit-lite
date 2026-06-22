@@ -1,6 +1,6 @@
 ---
 name: kickstart
-description: Initialize a new project with ForgeKit Lite documentation structure
+description: Initialize a new project with Groundwork Lite documentation structure
 disable-model-invocation: true
 argument-hint: "<project name>"
 ---

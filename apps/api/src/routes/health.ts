@@ -1,6 +1,6 @@
 import { Hono } from "hono";
-import type { HealthResponse } from "@forgekit/shared";
-import { APP_NAME, APP_VERSION } from "@forgekit/shared";
+import type { HealthResponse } from "@groundwork/shared";
+import { APP_NAME, APP_VERSION } from "@groundwork/shared";
 
 export const healthRoutes = new Hono();
 

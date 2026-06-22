@@ -6,7 +6,7 @@ services:
     environment:
       POSTGRES_USER: postgres
       POSTGRES_PASSWORD: postgres
-      POSTGRES_DB: forgekit
+      POSTGRES_DB: groundwork
     volumes:
       - postgres_data:/var/lib/postgresql/data
 

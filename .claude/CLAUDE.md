@@ -1,8 +1,8 @@
-# ForgeKit Lite - Project Instructions
+# Groundwork Lite - Project Instructions
 
 ## Overview
 
-ForgeKit Lite is a production monorepo starter with an AI workflow layer for structured development.
+Groundwork Lite is a production monorepo starter with an AI workflow layer for structured development.
 
 ## Key Files
 

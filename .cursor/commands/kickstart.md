@@ -1,6 +1,6 @@
 # Kickstart - Project Initialization
 
-**Objective**: Initialize a new project with ForgeKit Lite documentation structure.
+**Objective**: Initialize a new project with Groundwork Lite documentation structure.
 
 ## Stage 1: Project Basics
 

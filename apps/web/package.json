@@ -1,5 +1,5 @@
 {
-  "name": "@forgekit/web",
+  "name": "@groundwork/web",
   "private": true,
   "type": "module",
   "scripts": {
@@ -11,8 +11,8 @@
     "clean": "rm -rf dist"
   },
   "dependencies": {
-    "@forgekit/shared": "workspace:*",
-    "@forgekit/ui": "workspace:*",
+    "@groundwork/shared": "workspace:*",
+    "@groundwork/ui": "workspace:*",
     "lucide-react": "^0.474.0",
     "react": "^19.0.0",
     "react-dom": "^19.0.0"

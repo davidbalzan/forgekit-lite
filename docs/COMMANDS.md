@@ -1,6 +1,6 @@
 # AI Commands Guide
 
-How to use the 5 ForgeKit Lite workflow commands across different IDEs.
+How to use the 5 Groundwork Lite workflow commands across different IDEs.
 
 ---
 

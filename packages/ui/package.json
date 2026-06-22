@@ -1,5 +1,5 @@
 {
-  "name": "@forgekit/ui",
+  "name": "@groundwork/ui",
   "private": true,
   "type": "module",
   "main": "src/index.ts",

@@ -1,6 +1,6 @@
 ---
 mode: edit
-description: Initialize a new project with ForgeKit Lite documentation structure
+description: Initialize a new project with Groundwork Lite documentation structure
 ---
 
 # Kickstart - Project Initialization

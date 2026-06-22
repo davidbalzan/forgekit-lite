@@ -1,4 +1,4 @@
-# ForgeKit Lite
+# Groundwork Lite
 
 A clean production monorepo starter with a simple AI workflow layer.
 Clone it, run five slash commands, and suddenly your AI assistant actually remembers what you're building.
@@ -13,13 +13,13 @@ Clone it, run five slash commands, and suddenly your AI assistant actually remem
 
 ---
 
-## Why ForgeKit Lite?
+## Why Groundwork Lite?
 
 AI coding assistants are powerful... until they forget everything between sessions.
 
 You end up repeating the same context over and over: what the project is about, where you left off, what the next steps are.
 
-ForgeKit Lite fixes that with five simple slash commands that read and write plain Markdown files. Your assistant always knows the current phase, what's done, what's next, and why — without you having to re-explain.
+Groundwork Lite fixes that with five simple slash commands that read and write plain Markdown files. Your assistant always knows the current phase, what's done, what's next, and why — without you having to re-explain.
 
 It's lightweight, practical, and designed to stay out of your way.
 
@@ -28,8 +28,8 @@ It's lightweight, practical, and designed to stay out of your way.
 ## Quick Start
 
 ```bash
-git clone https://github.com/davidbalzan/forgekit-lite.git
-cd forgekit-lite
+git clone https://github.com/davidbalzan/groundwork-ai-lite.git
+cd groundwork-ai-lite
 pnpm install
 cp .env.example .env
 pnpm dev
@@ -65,7 +65,7 @@ pnpm dev
 ## Project Structure
 
 ```
-forgekit-lite/
+groundwork-ai-lite/
 ├── apps/
 │   ├── web/          # React 19 + Vite + Tailwind
 │   └── api/          # Hono API server
@@ -117,7 +117,7 @@ The same five commands work everywhere:
 
 This is the **Lite** edition (the essential five commands).
 
-The full [ForgeKit](https://github.com/davidbalzan/forgeKit) adds extra commands, a persistent knowledge base, and more advanced templates.
+The full [Groundwork](https://github.com/davidbalzan/groundwork-ai) adds extra commands, a persistent knowledge base, and more advanced templates.
 
 ---
 

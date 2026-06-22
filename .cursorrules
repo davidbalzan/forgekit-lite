@@ -1,13 +1,13 @@
-# ForgeKit Lite - Cursor Rules
+# Groundwork Lite - Cursor Rules
 
 ## Project Overview
 
-**ForgeKit Lite** — A production monorepo starter (React 19 + Hono + Turborepo) with an AI workflow layer for structured, phase-based development.
+**Groundwork Lite** — A production monorepo starter (React 19 + Hono + Turborepo) with an AI workflow layer for structured, phase-based development.
 
 ## Monorepo Structure
 
 ```
-forgekit-lite/
+groundwork-ai-lite/
 ├── apps/
 │   ├── web/                    # React 19 + Vite + Tailwind 4
 │   └── api/                    # Hono API server

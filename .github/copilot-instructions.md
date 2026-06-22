@@ -1,11 +1,11 @@
-# ForgeKit Lite - Copilot Instructions
+# Groundwork Lite - Copilot Instructions
 
-This project uses **ForgeKit Lite** — a lightweight AI workflow for structured, phase-based development.
+This project uses **Groundwork Lite** — a lightweight AI workflow for structured, phase-based development.
 
 ## Project Structure
 
 ```
-forgekit-lite/
+groundwork-ai-lite/
 ├── apps/
 │   ├── web/                   # Frontend (React + Vite + Tailwind)
 │   └── api/                   # Backend (Node.js + Hono)
