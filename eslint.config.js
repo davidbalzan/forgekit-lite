@@ -24,7 +24,10 @@ export default tseslint.config(
     },
     settings: {
       react: {
-        version: "detect",
+        // Pinned explicitly (not "detect") to avoid eslint-plugin-react's
+        // version auto-detection crashing under ESLint 10
+        // (context.getFilename was removed). See chore/version-bumps notes.
+        version: "19.2.0",
       },
     },
     rules: {
